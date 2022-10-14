@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(137, 137, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdown{
+    box-sizing: border-box;
+}
+
+.select{
+    background-color: rgb(65, 65, 124);
+    padding: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+.selected{
+    font-size: 20px;
+}
+
+
+.select-clicked{
+    background-color: rgb(85, 85, 173);
+    border: 2px solid white;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+.icon{
+    width: 0;
+    height: 0;
+    align-self: center;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-clicked{
+    transform: rotateX(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 8px;
+    background-color: rgb(76, 76, 129);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    width: auto;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+}
+
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+.active{
+    background-color: rgb(65, 65, 124)
+}
+
+.menu li{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.menu li:hover{
+    background-color: rgb(102, 102, 177);
+}
