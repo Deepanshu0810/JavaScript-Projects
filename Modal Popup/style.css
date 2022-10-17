@@ -1,0 +1,84 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(178, 117, 235);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.open-btn{
+    font-size: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.open-btn:active{
+    transform: scale(0.9);
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transition: 200ms ease-in-out;
+    transform: translate(-50%,-50%) scale(0);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(227, 74, 222);
+    width: 500px;
+    max-width: 90%;
+}
+
+.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.header h3{
+    font-size: 30px;
+}
+
+.close-btn{
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.close-btn:active{
+    transform: scale(0.9);
+}
+
+.para{
+    padding: 5px 10px;
+    font-size: 18px;
+    text-align: justify;
+}
