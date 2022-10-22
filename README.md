@@ -10,3 +10,4 @@ This repository will have different javascripts project made with HTML, CSS, Van
 | 15-10-2022	| [Image Carousel](https://image-carousel-sable.vercel.app/) |
 | 16-10-2022	| [Responsive Navbar]() |
 | 17-10-2022	| [Popup Modal](https://modal-popup-gamma.vercel.app/) |
+| 22-10-2022	| [Flip Card](https://flip-card-nine.vercel.app/) |
